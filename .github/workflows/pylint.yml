@@ -1,0 +1,11 @@
+name: anal test
+on: [push]
+jobs:
+  tests:
+    name: test script
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: тест создания файла
+      run: |
+        bash test.sh
